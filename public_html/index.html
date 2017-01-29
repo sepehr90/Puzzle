@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Link to the style sheet file /-->
+        <link rel="stylesheet" type="text/css" href="CSS/index.css">
+        <!-- Link to the Javascript file for HTML5 Canvas and Game logic -->
+        <script src="gameCode.js"></script>
+        <title>Peach Pipe Puzzle</title>  
+    </head>
+
+    <body>
+        
+        <div id="pump"></div>
+        
+        <div id="menuWrapper">
+            <div id="newGame"></div>
+            <div id="undo"></div>
+            <div id="redo"></div>
+            <div id="win"></div>
+            <div id="help"></div>
+            </div>
+        
+        <div id="drain"></div>
+        
+        <div id="gameWrapper">
+            <script>
+                init();
+            </script>
+            <canvas id="canvas" ></canvas>
+            
+            <button onclick="checkWin()">Check Win</button>
+            <button onclick="undo()" id='undoButton' disabled>Undo</button>
+            <button onclick="redo()" id='redoButton' disabled>Redo</button>
+            <button onclick="drawHelp()" id='helpButton'>Help</button>
+            <button value="Refresh" onClick="history.go()" >New Game</button>
+        </div>    
+            
+        
+        
+        <!--
+        <button onclick="undo()" id='undoButton' disabled>Undo</button>
+        <button onclick="redo()" id='redoButton' disabled>Redo</button>
+
+        
+        <a onmouseup="undo();" href="javascript:undo();">Undo</a>
+        <a onmouseup="redo();" href="javascript:undo();">Redo</a>
+         <a onmouseup="checkWin();" href="javascript:undo();">Click Me</a> 
+        
+
+        <p id="testUndo"></p>
+        <p id="ButtonWorks"></p>
+        <p id="demo"></p>
+        <p id="test1"></p>
+        <p id="test2"></p>
+        <p id="test3"></p>
+        <p id="test4"></p>
+        
+        
+
+        <p id="demo3"></p>
+
+        <p id="debugConnections"></p>
+
+        <p id="demo4"></p>
+        <p id="num_of_things_in_the_stack"></p>
+        <p id="last_element"></p>
+            -->
+    </body>
+
+</html>
